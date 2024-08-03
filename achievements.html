@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Achievements | My Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #0d1117;
+            color: #c9d1d9;
+        }
+        header {
+            background: #161b22;
+            color: #c9d1d9;
+            padding: 20px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        header nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+        }
+        header nav ul li {
+            margin: 0 15px;
+        }
+        header nav ul li a {
+            color: #c9d1d9;
+            text-decoration: none;
+            font-size: 1.2em;
+            transition: color 0.3s, text-shadow 0.3s;
+        }
+        header nav ul li a:hover {
+            color: #58a6ff;
+            text-shadow: 0 0 5px rgba(88, 166, 255, 0.8);
+        }
+        section {
+            padding: 60px;
+            background: #161b22;
+            min-height: 80vh;
+            position: relative; /* Added */
+        }
+        .achievements-detail {
+            margin: 0 auto;
+            max-width: 800px;
+            background: #21262d;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            position: relative; /* Added */
+        }
+        .achievements-detail h1 {
+            font-size: 2.5em;
+            margin-bottom: 15px;
+        }
+        .achievements-detail p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            position: relative; /* Added */
+            cursor: pointer; /* Added */
+        }
+        .achievements-detail img {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 100%;
+            width: 300px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: opacity 0.3s ease;
+        }
+        .achievements-detail p:hover img {
+            display: block;
+        }
+        footer {
+            background: #161b22;
+            color: #c9d1d9;
+            text-align: center;
+            padding: 20px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <div class="achievements-detail">
+            <h1>Achievements</h1>
+            <p>Certified for course "Python and IoT" by ExcelR
+                <img src="img/ExcelR.png" alt="Python and IoT Certificate">
+            </p>
+            <p>Certified for course "Mastering ChatGPT" by Udemy
+                <img src="img/chatgpt.png" alt="ChatGPT Certificate">
+            </p>
+            <p>Certificate of Merit in 2nd Year (Department Topper)
+                <img src="img/merit1.jpg" alt="Merit Certificate">
+            </p>
+            <p>Certificate of Merit in 3rd Year(Department Topper)
+                <img src="img/merit2.jpg" alt="Merit Certificate">
+            </p>
+            <p>Certificate of Participation in Nishkarsana Event
+                <img src="img/event.jpg" alt="Merit Certificate">
+            </p>
+            <p>Certified for Completion of Internship by EiSystems
+                <img src="img/Internship.png" alt="Internship Certificate">
+            </p>
+        </div>
+    </section>
+</body>
+</html>

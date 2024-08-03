@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | My Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #0d1117;
+            color: #c9d1d9;
+            transition: background 0.5s ease;
+        }
+        header {
+            background: #161b22;
+            color: #c9d1d9;
+            padding: 20px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        header nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+        }
+        header nav ul li {
+            margin: 0 15px;
+        }
+        header nav ul li a {
+            color: #c9d1d9;
+            text-decoration: none;
+            font-size: 1.2em;
+            transition: color 0.3s, text-shadow 0.3s;
+            position: relative;
+        }
+        header nav ul li a::before {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #58a6ff;
+            transition: width 0.3s;
+        }
+        header nav ul li a:hover::before {
+            width: 100%;
+        }
+        header nav ul li a:hover {
+            color: #58a6ff;
+            text-shadow: 0 0 5px rgba(88, 166, 255, 0.8);
+        }
+        section {
+            padding: 60px;
+            text-align: center;
+            background: #161b22;
+            min-height: 80vh;
+        }
+        .intro {
+            margin: 0 auto;
+            max-width: 700px;
+            background: #21262d;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        .intro h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        .intro p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+        .photo {
+            margin: 0 auto;
+            max-width: 200px;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            opacity: 0;
+            animation: fadeIn 1s ease-in forwards;
+        }
+        footer {
+            background: #161b22;
+            color: #c9d1d9;
+            text-align: center;
+            padding: 20px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <div class="intro">
+            <h1>Step into My World of Innovation</h1>
+            <p>Hello! I'm CHATLA CHETAN KUMAR, a passionate developer in building dynamic and interactive Machine Learning Models. Explore my projects and learn more about my work and skills.</p>
+            <img src="img/profile.png" alt="Your Photo" class="photo" id="profilePhoto">
+        </div>
+    </section>
+
+</body>
+</html>

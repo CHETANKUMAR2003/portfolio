@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flavor Forecast | My Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #0d1117;
+            color: #c9d1d9;
+            transition: background 0.5s ease;
+        }
+        header {
+            background: #161b22;
+            color: #c9d1d9;
+            padding: 20px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        header nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+        }
+        header nav ul li {
+            margin: 0 15px;
+        }
+        header nav ul li a {
+            color: #c9d1d9;
+            text-decoration: none;
+            font-size: 1.2em;
+            transition: color 0.3s, text-shadow 0.3s;
+        }
+        header nav ul li a:hover {
+            color: #58a6ff;
+            text-shadow: 0 0 5px rgba(88, 166, 255, 0.8);
+        }
+        section {
+            padding: 60px;
+            background: #161b22;
+            min-height: 80vh;
+        }
+        .project-detail {
+            margin: 0 auto;
+            max-width: 800px;
+            background: #21262d;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        .project-detail h1 {
+            font-size: 2.5em;
+            margin-bottom: 15px;
+        }
+        .project-detail p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+        footer {
+            background: #161b22;
+            color: #c9d1d9;
+            text-align: center;
+            padding: 20px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <div class="project-detail">
+            <h1>Flavor Forecast</h1>
+            <p><strong>Description:</strong> A machine learning-powered web application that suggests recipes based on mood and weather conditions. Built using Python's Flask framework and a Random Forest Classifier.</p>
+            <p><strong>Technologies:</strong> Python, Flask, Random Forest Classifier, HTML, CSS</p>
+        </div>
+    </section>
+
+    
+</body>
+</html>
